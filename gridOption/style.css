@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.grid-wrap {
+    padding: 2rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+.grid + .grid {
+    margin-top: 2rem;
+}
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    border: 1px dashed currentColor;
+    background-color: currentColor;
+    border-radius: 4px;
+    min-height: 15vh;
+    padding: 1rem;
+    color: #00f7e2;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div:nth-child(2) span {
+    color: #e60707;
+}
+
+div:nth-child(3) span {
+    color: #14d67c;
+}
+
+div:nth-child(4) span {
+    color: #1e22e6;
+}
+
